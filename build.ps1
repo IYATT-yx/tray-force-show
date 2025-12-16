@@ -9,7 +9,6 @@ pip install nuitka==2.8.9
 python .\savebuildtime.py
 
 nuitka --standalone --remove-output --windows-console-mode=disable `
---enable-plugin=tk-inter `
 --windows-icon-from-ico=.\icon.ico --include-data-file=.\icon.ico=.\ `
 --output-dir=dist --output-filename=tray-force-show_win_amd64 `
 .\tray-force-show.py
