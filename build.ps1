@@ -4,9 +4,9 @@ python -m venv venv
 .\venv\Scripts\Activate.ps1
 python.exe -m pip install --upgrade pip
 pip install -r requirements.txt
-pip install nuitka==2.8.9
+pip install nuitka==4.2.1
 
-python .\savebuildtime.py
+Set-Content -Path ".\buildtime.py" -Value "buildTime = '$(Get-Date -Format 'yyyyMMdd_HHmmss')'" -Encoding UTF8
 
 nuitka --standalone --remove-output --windows-console-mode=disable `
 --windows-icon-from-ico=.\icon.ico --include-data-file=.\icon.ico=.\ `
