@@ -1,3 +1,10 @@
+"""
+file: traymonitor.py
+description: 托盘图标监控线程
+author: IYATT-yx
+copyright:  Copyright (c) 2025-2026 IYATT-yx.
+            Licensed under the MIT License. See LICENSE file in the project root for full license information.
+"""
 import threading
 import winreg
 import win32api
