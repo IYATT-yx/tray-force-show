@@ -1,2 +1,4 @@
-pywin32==311
+pywin32==312
 pystray==0.19.5
+
+pystartup @ git+https://github.com/IYATT-yx/pystartuplib.git
